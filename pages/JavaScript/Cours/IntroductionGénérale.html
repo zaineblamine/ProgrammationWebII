@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cours Informatique</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="../../../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+    <!-- Timeline CSS -->
+    <link href="../../../dist/css/timeline.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../../dist/css/sb-admin-2.css" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+    <link href="../../../bower_components/morrisjs/morris.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <img class="logoEntete" src="../../../img/logo.png">
+                <a class="navbar-brand Entete" href="../../index.html">Cours Informatique</a>
+
+                <!--a class="navbar-brand" style="color:blue;">Mme Hayet Lamine Ep Abid</a-->
+            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-right">
+                <!--img src="../logo.png"-->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="../../login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="../../index.html">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#"> JavaScript <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <!--li>
+                                    <a href="#">Second Level Item</a>
+                                </li-->
+                                <li>
+                                    <a href="#">Cours <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Introduction générale</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Les éléments du langage</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Les objets javascript</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Les objets du navigateur</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Les évènements</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Les formulaires</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                        <h1 class="page-header"><img class="logo1" src="../../../img/logoJavascript.png" style="float:left;">JavaScript</h1>
+                        <br/>
+                        <a class="navButtom col-lg-9" href="../../index.html">« Accueil</a>
+                        <a class="navButtom col-lg-3" href="#">Chapitre Suivant »</a><br><br>
+                        <h2>Introduction Générale</h3>
+                        <div>
+                        <h3>Définition</h3>
+                        <p>Javascript est un langage de scripts qui incorporé aux balises HTML, permet d'améliorer la présentation et l'interactivité des pages Web.</p>
+                        <h3>Présentation</h3>
+                        <ul>
+                          <li>JavaScript est un langage de programmation complètement lié au langage HTML.</li>
+                          <li>Le développeur Internet code ses pages HTML en y intégrant des sources JavaScript.</li>
+                          <li>Permet d’exécuter des commandes du <bold class=thickblue> côté client</bold> (au niveau du navigateur)</li>
+                          <li>Javascript est un langage <bold class="thickblue">orienté objets</bold>. Chaque objet possède des <bold class="thickblue">propriétés</bold> et des <bold class="thickblue">méthodes.</bold>
+                            <br>
+                            	<dd> <dfn>Exemple d’objets </dfn>: window, document, formulaire, bouton...</dd>
+                          </li>
+                          <li>JavaScript est un language <bold class="thickRed">événementiel</bold> (association d’actions aux événements déclenchés par l’utilisateur (passage de souris, clic, saisie clavier, etc...).</li>
+                        </ul>
+                      </div>
+                        <h3>HTML et JavaScript</h3>
+                        <p>Il y a plusieurs endroits dans une page web où il est possible d'intégrer du code JavaScript
+                          <ul>
+                            <li>dans le corps de la page</li>
+                          <li> en entête de page </li>
+                            <li> dans un événement d'un objet de la page </li>
+                          </ul>
+                        </p>
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                 Exemple 1
+                            </div>
+                            <div class="panel-body">
+                              <span style="color:blue">&lt;</span><span style="color:brown">script</span> <span style="color:red">language=</span><span style="color:blue">"Javascript"</span><span style="color:blue">&gt;</span><br>
+                               Placez ici le code de votre script <br><span style="color:blue">&lt;</span><span style="color:brown">/script</span><span style="color:blue">&gt;</span><br>
+                            </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            Ou dans un fichier séparé :<br>
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                         Exemple 2
+                    </div>
+                    <div class="panel-body">
+                      <span style="color:blue">&lt;</span><span style="color:brown">script</span> <span style="color:red">language=</span><span style="color:blue">"Javascript"</span>
+                      <span style="color:red">src=</span><span style="color:blue">"source.js"</span>
+                      <span style="color:blue">&gt;</span>
+                     <span style="color:blue">&lt;</span><span style="color:brown">/script</span><span style="color:blue">&gt;</span><br>
+                    </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                 Exemple 3
+            </div>
+            <div class="panel-body">
+              <span style="color:blue">&lt;</span><span style="color:brown">!DOCTYPE</span> <span style="color:red">html</span><span style="color:blue">&gt;</span><br>
+              <span style="color:blue">&lt;</span><span style="color:brown">html</span><span style="color:blue">&gt;</span><br>
+              <span style="color:blue">&lt;</span><span style="color:brown">title</span><span style="color:blue">&gt;</span>une page contenant du Javascript<span style="color:blue">&lt;</span><span style="color:brown">/title</span><span style="color:blue">&gt;</span><br>
+              <span style="color:blue">&lt;</span><span style="color:brown">body</span><span style="color:blue">&gt;</span><br><br>
+              <span style="color:blue">&lt;</span><span style="color:brown">script</span> <span style="color:red">language=</span><span style="color:blue">"Javascript"</span>
+
+              <span style="color:blue">&gt; </span>alert("Voici un message d\'alerte!");
+             <span style="color:blue">&lt;</span><span style="color:brown">/script</span><span style="color:blue">&gt;</span><br>
+              <span style="color:blue">&lt;</span><span style="color:brown">/body</span><span style="color:blue">&gt;</span><br>
+              <span style="color:blue">&lt;</span><span style="color:brown">/html</span><span style="color:blue">&gt;</span>
+              <img class="alert" src="../../../img/alert.png">
+            </div>
+</div>
+</div>
+
+<h3>Le commentaire</h3>
+  <ul>
+    <li >Pour mettre en commentaire une partie de code, jusqu'au prochain retour à la ligne</li>
+    <div >
+        <div class="panel panel-default">
+            <div class="panel-body">
+              <span style="color:blue">//Ceci est en commentaire</span>
+            </div>
+          </div>
+</div>
+    <li >Pour mettre en commentaire plusieurs lignes de code</li>
+    <div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+              <span style="color:blue">/* Ceci est en commentaire <br>Ligne 1<br>Ligne 2<br>
+Dernière ligne */</span>
+            </div>
+          </div>
+</div>
+  </ul>
+
+<h3>Premières instructions javascript</h3>
+<ul>
+  <li>affichage d’un message
+    <ul>
+      <li><bold class=thickblue>alert("votre texte");</bold> une méthode de l'objet window (boite de dialogue)</li>
+      <li><bold class=thickblue>document.write("votre texte" et/ou var);/.writeln(); </bold> une méthode de l'objet document (texte affiché dans le browser).</li>
+</ul>
+  </li>
+
+<li>Saisie de données
+prompt ("votre texte invite" ,valeur-initiale); une méthode de l'objet window (boite de dialogue).</li>
+</ul>
+</div><!--row-->
+
+<br>
+            </div> <!--container-fluid-->
+        <a class="navButtom col-lg-9" href="../../index.html">« Accueil</a>
+        <a class="navButtom col-lg-3" href="#">Chapitre Suivant »</a><br><br>
+</div><!--page-wrapper-->
+
+</div><!--wrapper-->
+    <footer>
+      <div class="container">
+        <!--img class="logo" src="../../../img/logo.png"-->
+        <p class="copyright col-lg-9">
+        &copy;Copyright Mme Hayet Lamine Ep Abid - ISET Sfax.
+      </p>
+    <p class="copyright col-lg-3">
+      <img class="logoMail" src="../../../img/mail.png"> <a href="#">lamine_hayet@yahoo.fr</a>
+    </p>
+      </div>
+</footer>
+
+    <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../../../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../../../dist/js/sb-admin-2.js"></script>
+</body>
+</html>

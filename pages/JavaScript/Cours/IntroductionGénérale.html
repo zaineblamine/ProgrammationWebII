@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Cours Informatique</title>
+    <title >Cours Informatique</title>
     <!-- Bootstrap Core CSS -->
     <link href="../../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- MetisMenu CSS -->
@@ -78,22 +78,22 @@
                                     <a href="#">Cours <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
-                                            <a href="#">Introduction générale</a>
+                                            <a href="IntroductionGénérale.html">Introduction générale</a>
                                         </li>
                                         <li>
-                                            <a href="#">Les éléments du langage</a>
+                                            <a href="LesÉlémentsDuLangage.html">Les éléments du langage</a>
                                         </li>
                                         <li>
-                                            <a href="#">Les objets javascript</a>
+                                            <a href="LesObjetsJavascript.html">Les objets javascript</a>
                                         </li>
                                         <li>
-                                            <a href="#">Les objets du navigateur</a>
+                                            <a href="LesObjetsDuNavigateur.html">Les objets du navigateur</a>
                                         </li>
                                         <li>
-                                            <a href="#">Les évènements</a>
+                                            <a href="LesÉvènements.html">Les évènements</a>
                                         </li>
                                         <li>
-                                            <a href="#">Les formulaires</a>
+                                            <a href="LesÉvènements.html">Les évènements</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -112,12 +112,13 @@
                         <h1 class="page-header"><img class="logo1" src="../../../img/logoJavascript.png" style="float:left;">JavaScript</h1>
                         <br/>
                         <a class="navButtom col-lg-9" href="../../index.html">« Accueil</a>
-                        <a class="navButtom col-lg-3" href="#">Chapitre Suivant »</a><br><br>
-                        <h2>Introduction Générale</h3>
+                        <a class="navButtom col-lg-3" href="LesÉlémentsDuLangage.html">Chapitre Suivant »</a><br><br>
+                        <h2>Introduction Générale</h2>
+
                         <div>
-                        <h3>Définition</h3>
+                        <h3>1- Définition</h3>
                         <p>Javascript est un langage de scripts qui incorporé aux balises HTML, permet d'améliorer la présentation et l'interactivité des pages Web.</p>
-                        <h3>Présentation</h3>
+                        <h3>2- Présentation</h3>
                         <ul>
                           <li>JavaScript est un langage de programmation complètement lié au langage HTML.</li>
                           <li>Le développeur Internet code ses pages HTML en y intégrant des sources JavaScript.</li>
@@ -129,7 +130,7 @@
                           <li>JavaScript est un language <bold class="thickRed">événementiel</bold> (association d’actions aux événements déclenchés par l’utilisateur (passage de souris, clic, saisie clavier, etc...).</li>
                         </ul>
                       </div>
-                        <h3>HTML et JavaScript</h3>
+                        <h3>3- HTML et JavaScript</h3>
                         <p>Il y a plusieurs endroits dans une page web où il est possible d'intégrer du code JavaScript
                           <ul>
                             <li>dans le corps de la page</li>
@@ -171,11 +172,14 @@
             <div class="panel-body">
               <span style="color:blue">&lt;</span><span style="color:brown">!DOCTYPE</span> <span style="color:red">html</span><span style="color:blue">&gt;</span><br>
               <span style="color:blue">&lt;</span><span style="color:brown">html</span><span style="color:blue">&gt;</span><br>
+              <span style="color:blue">&lt;</span><span style="color:brown">head</span><span style="color:blue">&gt;</span><br>
               <span style="color:blue">&lt;</span><span style="color:brown">title</span><span style="color:blue">&gt;</span>une page contenant du Javascript<span style="color:blue">&lt;</span><span style="color:brown">/title</span><span style="color:blue">&gt;</span><br>
-              <span style="color:blue">&lt;</span><span style="color:brown">body</span><span style="color:blue">&gt;</span><br><br>
+              <span style="color:blue">&lt;</span><span style="color:brown">/head</span><span style="color:blue">&gt;</span><br>
+              <span style="color:blue">&lt;</span><span style="color:brown">body</span><span style="color:blue">&gt;</span><br>
               <span style="color:blue">&lt;</span><span style="color:brown">script</span> <span style="color:red">language=</span><span style="color:blue">"Javascript"</span>
 
-              <span style="color:blue">&gt; </span>alert("Voici un message d\'alerte!");
+              <span style="color:blue">&gt;<br>
+               </span>alert(<span style="color:red">"Voici un message d\'alerte!"</span>);<br>
              <span style="color:blue">&lt;</span><span style="color:brown">/script</span><span style="color:blue">&gt;</span><br>
               <span style="color:blue">&lt;</span><span style="color:brown">/body</span><span style="color:blue">&gt;</span><br>
               <span style="color:blue">&lt;</span><span style="color:brown">/html</span><span style="color:blue">&gt;</span>
@@ -184,7 +188,7 @@
 </div>
 </div>
 
-<h3>Le commentaire</h3>
+<h3>4- Le commentaire</h3>
   <ul>
     <li >Pour mettre en commentaire une partie de code, jusqu'au prochain retour à la ligne</li>
     <div >
@@ -205,7 +209,7 @@ Dernière ligne */</span>
 </div>
   </ul>
 
-<h3>Premières instructions javascript</h3>
+<h3>5- Premières instructions javascript</h3>
 <ul>
   <li>affichage d’un message
     <ul>
@@ -222,7 +226,7 @@ prompt ("votre texte invite" ,valeur-initiale); une méthode de l'objet window (
 <br>
             </div> <!--container-fluid-->
         <a class="navButtom col-lg-9" href="../../index.html">« Accueil</a>
-        <a class="navButtom col-lg-3" href="#">Chapitre Suivant »</a><br><br>
+        <a class="navButtom col-lg-3" href="LesÉlémentsDuLangage.html">Chapitre Suivant »</a><br><br>
 </div><!--page-wrapper-->
 
 </div><!--wrapper-->

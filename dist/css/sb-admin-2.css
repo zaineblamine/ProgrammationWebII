@@ -49,6 +49,11 @@ position:relative;
   left:500px;
   top:5px;
 }
+.alertNext{
+  position: absolute;
+  left:600px;
+  top:150px;
+}
 #page-wrapper {
     padding: 0 15px;
     min-height: 568px;

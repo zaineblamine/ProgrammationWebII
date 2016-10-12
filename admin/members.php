@@ -56,13 +56,14 @@ if (!isset($_SESSION['username'])) {
 			<li>
                             <a href="adminspace.php">Membres</a>
                         </li>
-			</ul>		
+			</ul>
             </div>
 	</div>
 
         </nav>
 	 <div id="page-wrapper">
             <div class="container-fluid">
+              <br><br><br>
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">Liste des membres Inscrits</h1>
@@ -71,9 +72,9 @@ if (!isset($_SESSION['username'])) {
                                         <?php
 					 try {
 					 $db = new DbConn;
-					 $tbl_members = $db->tbl_members;?>				
-    					
-   				 
+					 $tbl_members = $db->tbl_members;?>
+
+
                                   </div>
 		            <div class="row">
                 <div class="col-lg-14">
@@ -89,7 +90,7 @@ if (!isset($_SESSION['username'])) {
                                         <tr>
                                             <th>Nom d'utilisateur</th>
                                             <th>Adresse Mail</th>
-					    <th>timestamp</th>	
+					    <th>timestamp</th>
                                             <th>membre?</th>
                                             <th>validé?</th>
 					    <th>activer</th>
@@ -103,21 +104,21 @@ if (!isset($_SESSION['username'])) {
 						<td><?=$row['username']?></td>
 						<td><?=$row['email']?></td>
 						<td><?=$row['mod_timestamp']?></td>
-						<?php 
+						<?php
 						if ($row['approved']=='0') {
 								echo"<td>pas encore</td>";
 						}
 						else {
 								echo"<td>mail envoyé</td>"; }
 						 ?>
-						<?php 
+						<?php
 						if ($row['verified']=='0') {
 								echo"<td>pas encore</td>";
 						}
 						else {
 								echo"<td>Vérifié</td>"; }
 						 ?>
-						
+
 					<?php echo"<td><a href='enable.php?usr=$row[username]&id=$row[id]&mail=$row[email]&app=$row[approved]'>activer</a></td>"?>
 					<?php echo"<td><a href='disable.php?dis=$row[username]'>désactiver</a></td>"?>
 					<?php echo"<td><a href='delete.php?del=$row[username]'>supprimer</a></td>"?>
@@ -133,7 +134,7 @@ if (!isset($_SESSION['username'])) {
     				print "Erreur !: " . $e->getMessage() . "<br/>";
     				die();
 				}
- 				?> 
+ 				?>
                             </div>
                             <!-- /.table-responsive -->
                         </div>

@@ -25,9 +25,7 @@ font-weight: bold;
 
 .headerfixed{
  position: fixed;
-  width: 100%; max-width: 1500px; min-width: 950px; 
-  
-
+  width: 100%;
 }
 .navButtom {
   font-size: 18px;
@@ -97,10 +95,9 @@ position:relative;
   top:150px;
 }
 #page-wrapper {
-    padding: 0 15px;
+    padding: 0 10px;
     min-height: 568px;
     background-color: #fff;
-
 }
 #page-wrapper2 {
     padding: 0 0px;

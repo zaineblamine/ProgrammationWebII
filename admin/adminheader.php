@@ -21,7 +21,7 @@
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
-<body>        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+<body>        <nav class="navbar navbar-default navbar-static-top headerfixed" role="navigation" style="margin-bottom: 0">
   <div class="navbar-header">
       <img class="logoEntete" src="http://localhost/CoursInformatique/img/logoiset.png">
       <a class="navbar-brand Entete" href="#">Programmation Web II : Apprendre JavaScript et XML</a>

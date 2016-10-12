@@ -11,7 +11,7 @@ class MailSender
         // ADD $_SERVER['SERVER_PORT'] TO $verifyurl STRING AFTER $_SERVER['SERVER_NAME'] FOR DEV URLS USING PORTS OTHER THAN 80
         // substr() trims "createuser.php" off of the current URL and replaces with verifyuser.php
         // Can pass 1 (verified) or 0 (unverified/blocked) into url for "v" parameter
-        $verifyurl = substr($base_url . $_SERVER['PHP_SELF'], 0, -strlen(basename($_SERVER['PHP_SELF']))) . "verifyuser.php?v=1&uid=" . $id;
+        $verifyurl = substr($base_url . $_SERVER['PHP_SELF'], 0, -strlen(basename($_SERVER['PHP_SELF']))-6) . "login/verifyuser.php?v=1&uid=" . $id;
 
         // Create a new PHPMailer object
         // ADD sendmail_path = "env -i /usr/sbin/sendmail -t -i" to php.ini on UNIX servers
@@ -32,23 +32,23 @@ class MailSender
         if ($type == 'Verify') {
 
             //Set the subject line
-            $mail->Subject = $user . ' Account Verification';
+            $mail->Subject = 'Confirmez votre compte ' .$user;
 
             //Set the body of the message
-            $mail->Body = $verifymsg . '<br><a href="'.$verifyurl.'">'.$verifyurl.'</a>';
+            $mail->Body = 'Bonjour '.$user . ',<br><br>Confirmez votre adresse email afin de finaliser votre compte Programmation Web II @'.$user.'<br>Il suffit de cliquer sur le bouton ci-dessous.<a href="'.$verifyurl.'"><br>Confirmez maintenant</a><br><br>';
 
             $mail->AltBody  =  $verifymsg . $verifyurl;
 
-        } elseif ($type == 'Active') {
+        } /*elseif ($type == 'Active') {
 
             //Set the subject line
-            $mail->Subject = $site_name . ' Account Created!';
+            $mail->Subject = $site_name . ' Compte Crée';
 
             //Set the body of the message
             $mail->Body = $active_email . '<br><a href="'.$signin_url.'">'.$signin_url.'</a>';
             $mail->AltBody  =  $active_email . $signin_url;
 
-        };
+        }*/;
 
         //SMTP Settings
         if ($mailServerType == 'smtp') {

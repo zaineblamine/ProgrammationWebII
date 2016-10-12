@@ -10,7 +10,7 @@ $pw1 = $_POST['password1'];
 $pw2 = $_POST['password2'];
 $fname = $_POST['firstname'];
 $lname = $_POST['lastname'];
-    
+
 //Enables moderator verification (overrides user self-verification emails)
 /*if (isset($admin_email)) {
 
@@ -49,9 +49,9 @@ if ($pw1 != $pw2) {
 
             echo '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>'. $signupthanks .'</div><div id="returnVal" style="display:none;">true</div>';
 
-            //Send verification email
-            $m = new MailSender;
-            $m->sendMail($admin_email, $newuser, $newid, 'Verify');
+            /*Send verification email
+        		$m = new MailSender;
+        		$m->sendMail($admin_email, $newuser, $newid, 'Verify');     */     
 
         } else {
             //Failure

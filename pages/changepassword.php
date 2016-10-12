@@ -31,6 +31,7 @@ if (!isset($_SESSION['username'])) {
   <?php include("entete.php"); ?>
         <div id="page-wrapper">
             <div class="container-fluid">
+              <br><br><br>
                 <div class="row">
                         <h1 class="page-header">Modifier le mot de passe</h1>
                         <br/>

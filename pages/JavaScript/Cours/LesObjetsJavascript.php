@@ -111,6 +111,7 @@ if (!isset($_SESSION['username'])) {
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row">
+                  <br><br><br>
                   <h1 class="page-header"><img class="logo1" src="../../../img/logoJavascript.png" style="float:left;">JavaScript</h1>
                   <br/>
                   <a class="navButtom col-lg-9" href="LesÉlémentsDuLangage.php">« Les éléments du Langage</a>

@@ -33,6 +33,7 @@ if (!isset($_SESSION['username'])) {
           <?php include("../../entete.php"); ?>
         <div id="page-wrapper">
             <div class="container-fluid">
+              <br><br><br>
                 <div class="row">
                         <h1 class="page-header"><img class="logo1" src="../../../img/logoJavascript.png" style="float:left;">JavaScript</h1>
                         <br/>

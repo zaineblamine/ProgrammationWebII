@@ -9,6 +9,7 @@ if (!isset($_SESSION['username'])) {
 <?php include("adminheader.php"); ?>
 	 <div id="page-wrapper">
             <div class="container-fluid">
+              <br><br><br>
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">Membres Inscrits</h1>
@@ -17,9 +18,9 @@ if (!isset($_SESSION['username'])) {
                                         <?php
 					 try {
 					 $db = new DbConn;
-					 $tbl_attempts = $db->tbl_attempts;?>				
-    					
-   				 
+					 $tbl_attempts = $db->tbl_attempts;?>
+
+
                                   </div>
 		            <div class="row">
                 <div class="col-lg-14">
@@ -34,7 +35,7 @@ if (!isset($_SESSION['username'])) {
                                     <thead>
                                         <tr>
                                             <th>Nom d'utilisateur</th>
-					    <th>Derniere authentification</th>	
+					    <th>Derniere authentification</th>
                                             <th>Nombre d'authentification</th>
                                         </tr>
                                     </thead>
@@ -54,7 +55,7 @@ if (!isset($_SESSION['username'])) {
     				print "Erreur !: " . $e->getMessage() . "<br/>";
     				die();
 				}
- 				?> 
+ 				?>
                             </div>
                             <!-- /.table-responsive -->
                         </div>

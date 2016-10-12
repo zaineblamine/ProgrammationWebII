@@ -33,8 +33,8 @@ if (!isset($_SESSION['username'])) {
         <?php include ("../../entete.php");?>
         <div id="page-wrapper">
             <div class="container-fluid">
+                <br><br><br>
                 <div class="row">
-<br><br><br>
                         <h1 class="page-header"><img class="logo1" src="../../../img/logoJavascript.png" style="float:left;">JavaScript</h1>
                         <br/>
                         <a class="navButtom col-lg-8" href="../../index.php">« Accueil</a>
@@ -173,4 +173,3 @@ prompt ("votre texte invite" ,valeur-initiale); une méthode de l'objet window (
     <script src="../../../dist/js/sb-admin-2.js"></script>
 </body>
 </html>
-

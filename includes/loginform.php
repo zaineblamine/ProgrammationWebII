@@ -55,11 +55,12 @@ class LoginForm extends DbConn
             } elseif (password_verify($mypassword, $result['password']) && $result['verified'] == '0') {
 
                 //Account not yet verified
+                
                 $success = "<div class=\"alert alert-danger alert-dismissable\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>Your account has been created, but you cannot log in until it has been verified</div>";
 
             } else {
 
-                //Wrong username or password
+              echo "<img class=logoMail src='../img/croix.png'>Mot de passe incorrecte!<div id='returnVal' style='display:none;'>false</div>";
                 $success = "<div class=\"alert alert-danger alert-dismissable\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>Wrong Username or Password</div>";
 
             }
@@ -101,6 +102,8 @@ class LoginForm extends DbConn
         return $resp;
 
     }
+
+
 
     public function updateAttempts($username)
     {
@@ -169,5 +172,41 @@ class LoginForm extends DbConn
         return $resp;
 
     }
+    public function checkPasswordWhenLogidIn($myusername, $mypassword)
+    {
+        $conf = new GlobalConf;
+        $ip_address = $conf->ip_address;
 
+        try {
+
+            $db = new DbConn;
+            $tbl_members = $db->tbl_members;
+            $err = '';
+
+        } catch (PDOException $e) {
+
+            $err = "Error: " . $e->getMessage();
+
+        }
+
+        $stmt = $db->conn->prepare("SELECT * FROM ".$tbl_members." WHERE username = '$_SESSION[username]'");
+        $stmt->execute();
+
+        // Gets query result
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+
+             //If max attempts not exceeded, continue
+            // Checks password entered against db password hash
+            if (password_verify($mypassword, $result['password'])) {
+
+                //Success! Register $myusername, $mypassword and return "true"
+                $success = 'true';
+            }
+            else {
+              $success = 'false';
+
+            }
+        return $success;
+    }
 }

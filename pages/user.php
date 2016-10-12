@@ -1,4 +1,5 @@
 <?php
+require "../includes/dbconn.php";
 //PUT THIS HEADER ON TOP OF EACH UNIQUE PAGE
 session_start();
 if (!isset($_SESSION['username'])) {
@@ -32,29 +33,39 @@ if (!isset($_SESSION['username'])) {
         <div id="page-wrapper">
             <div class="container-fluid">
               <br><br><br>
+              <?php
+					 try {
+					 $db = new DbConn;
+					 $tbl_members = $db->tbl_members;?>
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">Profil</h1>
                         <br/>
-                                                              <table  class="table">
-                                                                <tr>
+                                      <table  class="table">
+                                        <?php foreach($db->conn->query("SELECT * FROM $tbl_members where username='$_SESSION[username]'") as $row) {?>
+                                            <tr>
                                                                   <td class=thickbluebig >Nom d'utilisateur</td>
-                                                                    <td></td>
+                                                                    <td><?=$row['username']?></td>
                                                                 </tr>
                                         <tr>
                                     <td class=thickbluebig>Nom</td>
-                                    <td> </td>
+                                    <td><?=$row['lastname']?></td>
                                   </tr>
                                   <tr>
                               <td class=thickbluebig>Prénom</td>
-                              <td></td>
+                              <td><?=$row['firstname']?></td>
                             </tr>
                             <tr>
                         <td class=thickbluebig >Adresse Mail</td>
-                        <td> </td>
-                      </tr>
+                        <td> <?=$row['email']?></td>
+                      </tr><?} ?>
                                 </table>
-
+                                <?php $db->conn = null;
+              				} catch (PDOException $e) {
+                  				print "Erreur !: " . $e->getMessage() . "<br/>";
+                  				die();
+              				}
+               				?>
                     </div>
                                   </div>
             </div>

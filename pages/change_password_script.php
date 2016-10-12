@@ -32,6 +32,10 @@
 				<br><a href='changepassword.php'>Retour</a>
 				<div id='returnVal' style='display:none;'>true</div>";}
 		}
+		else{
+			echo "<img class=logoMail src='../img/croix.png'>Mot de passe incorrecte!<div id='returnVal' style='display:none;'>false</div>";
+
+		}
 
 		$db->conn = null;
 		}

@@ -164,4 +164,42 @@ class LoginFormAdmin extends DbConn
 
     }
 
+    public function checkPasswordWhenLogidIn($myusername, $mypassword)
+    {
+        $conf = new GlobalConf;
+        $ip_address = $conf->ip_address;
+
+        try {
+
+            $db = new DbConn;
+            $tbl_admin = $db->tbl_admin;
+            $err = '';
+
+        } catch (PDOException $e) {
+
+            $err = "Error: " . $e->getMessage();
+
+        }
+
+        $stmt = $db->conn->prepare("SELECT * FROM ".$tbl_admin." WHERE username = '$_SESSION[username]'");
+        $stmt->execute();
+
+        // Gets query result
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+
+             //If max attempts not exceeded, continue
+            // Checks password entered against db password hash
+            if (password_verify($mypassword, $result['password'])) {
+
+                //Success! Register $myusername, $mypassword and return "true"
+                $success = 'true';
+            }
+            else {
+              $success = 'false';
+
+            }
+        return $success;
+    }
+
 }

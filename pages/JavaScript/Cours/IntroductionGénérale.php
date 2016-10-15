@@ -42,9 +42,9 @@ if (!isset($_SESSION['username'])) {
                         <h2>Introduction Générale</h2>
 
                         <div>
-                        <h3>1- Définition</h3>
+                        <h3>Définition</h3>
                         <p>Javascript est un langage de scripts qui incorporé aux balises HTML, permet d'améliorer la présentation et l'interactivité des pages Web.</p>
-                        <h3>2- Présentation</h3>
+                        <h3>Présentation</h3>
                         <ul>
                           <li>JavaScript est un langage de programmation complètement lié au langage HTML.</li>
                           <li>Le développeur Internet code ses pages HTML en y intégrant des sources JavaScript.</li>
@@ -56,7 +56,7 @@ if (!isset($_SESSION['username'])) {
                           <li>JavaScript est un language <bold class="thickRed">événementiel</bold> (association d’actions aux événements déclenchés par l’utilisateur (passage de souris, clic, saisie clavier, etc...).</li>
                         </ul>
                       </div>
-                        <h3>3- HTML et JavaScript</h3>
+                        <h3> HTML et JavaScript</h3>
                         <p>Il y a plusieurs endroits dans une page web où il est possible d'intégrer du code JavaScript
                           <ul>
                             <li>dans le corps de la page</li>
@@ -112,12 +112,12 @@ if (!isset($_SESSION['username'])) {
               <!--img class="alert" src="../../../img/alert.png"-->
             </div>
             <div class="panel-footer">
-              <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="exemple3.php">Essayer le code</a></p>
+              <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="IntroductionGénéraleExemple3.php" target="_blank">Essayer le code</a></p>
             </div>
 </div>
 </div>
 
-<h3>4- Le commentaire</h3>
+<h3> Le commentaire</h3>
   <ul>
     <li >Pour mettre en commentaire une partie de code, jusqu'au prochain retour à la ligne</li>
     <div >
@@ -142,7 +142,7 @@ if (!isset($_SESSION['username'])) {
 </div>
   </ul>
 
-<h3>5- Premières instructions javascript</h3>
+<h3> Premières instructions javascript</h3>
 <ul>
   <li>affichage d’un message
     <ul>

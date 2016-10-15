@@ -6,7 +6,7 @@
 		try {
 		$db = new DbConn;
 		$tbl_members = $db->tbl_members;		
-		$sql="UPDATE $tbl_members SET approved='0' WHERE username='$nomm';";
+		$sql="UPDATE $tbl_members SET approved='0',verified='0' WHERE username='$nomm';";
 		$stmt= $db->conn->prepare($sql);
 		$stmt->execute();
 		echo "<meta http-equiv='refresh' content='0;url=adminspace.php'>";

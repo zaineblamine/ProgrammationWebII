@@ -44,18 +44,7 @@ if (!isset($_SESSION['username'])) {
                                   </div>
             </div>
         </div>
-    </div>
-    <footer>
-      <div class="container">
-        <!--img class="logo" src="../../../img/logo.png"-->
-        <p class="copyright col-lg-9">
-        &copy;Copyright Mme Hayet Lamine Ep Abid - ISET Sfax.
-      </p>
-      <p class="copyright col-lg-3">
-      <img class="logoMail" src=../img/mail.png> <a href="#">lamine_hayet@yahoo.fr</a>
-    </p>
-      </div>
-</footer>
+<?php include ("footer.php");?>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>

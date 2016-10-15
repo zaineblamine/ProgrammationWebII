@@ -25,7 +25,8 @@ $mailServerType = 'smtp';
 //IF $mailServerType = 'smtp'
 $smtp_server = 'smtp.gmail.com';
 $smtp_user = 'informatiquecours1@gmail.com';
-$smtp_pw = 'ok8965ldk';
+
+$smtp_pw = '';
 $smtp_port = 587; //465 for ssl, 587 for tls, 25 for other
 $smtp_security = 'tls';//ssl, tls or ''
 

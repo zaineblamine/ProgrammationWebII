@@ -46,7 +46,7 @@ font-weight: bold;
 .menu {
   position: fixed;
   width: 17.9em;
- 
+
 }
 .thick{
   font-weight: bold;
@@ -100,10 +100,9 @@ position:relative;
     background-color: #fff;
 }
 #page-wrapper2 {
-    padding: 0 0px;
-    min-height: 568px;
+    padding: 0 10px;
+    min-height: 609px;
     background-color: #fff;
-
 }
 
 
@@ -113,11 +112,20 @@ position:relative;
         margin: 0 0 0 250px;
         border-left: 1px solid #e7e7e7;
         font-size: 15px;
+        padding-left: 10px;
+        padding-right: 100px;
+    }
+}
+@media(min-width:768px) {
+    #page-wrapper2 {
+        position: inherit;
+        margin: 10 10 100 250px;
+        border-left: 1px solid #e7e7e7;
+        font-size: 15px;
         padding-left: 50px;
         padding-right: 100px;
     }
 }
-
 .navbar-top-links {
     margin-right: 0;
 }
@@ -464,5 +472,9 @@ footer {
     .container { width: 95% }
     #portfoliolist .portfolio {
         width: 97%;
-        margin: 2%;
+        margin: 0%;
+    }
+    footer {
+        display : table-row;
+        height: 100px; /* à titre d'exemple */
     }

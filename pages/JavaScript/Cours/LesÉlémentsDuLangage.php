@@ -41,7 +41,7 @@ if (!isset($_SESSION['username'])) {
                         <h2>Les éléments du langage</h2>
 
                         <div>
-                        <h3>1- Les variables</h3>
+                        <h3> Les variables</h3>
                         <ul>
                                 <li>JavaScript utilise l'instruction <bold class="thickblue">var</bold> pour la déclaration.</li>
                                 <li>Pour déclarer une variable, il ne faut pas déclarer <bold class="thickblue">le type.</bold> Le navigateur le détecte tout seul.</li>
@@ -49,7 +49,7 @@ if (!isset($_SESSION['username'])) {
                                 <li>A travers les fonctions  eval ou parseInt, parseFloat, parseDouble et toString; il est possible de convertir les types.</li>
                                 <li>Le langage est sensible à la casse.</li>
                         </ul>
-                        <h3>2- Les types de base</h3>
+                        <h3> Les types de base</h3>
                         <ul>
                           <li>Les <bold class="thickblue">nombres</bold> : entier et réel</li>
                           <li>Les <bold class="thickblue">booléens</bold> : true ou false,</li>
@@ -116,7 +116,7 @@ La séquence \" permet d’insérer un guillemet dans une chaîne.<dfn></li>
             </div>
             </div>
                       </div>
-                        <h3>3- Les opérateurs</h3>
+                        <h3> Les opérateurs</h3>
                         <ul>
                         <li>Les opérateurs de calcul  :<dfn> +, -, *, /, %, =</dfn></li>
 
@@ -142,7 +142,7 @@ La séquence \" permet d’insérer un guillemet dans une chaîne.<dfn></li>
                         <li>! - ++ --</li>
                         <li>( )</li>
                       </ul>
-<h3>4- Les structures de contrôles </h3>
+<h3> Les structures de contrôles </h3>
       <div class="col-lg-4">
           <div class="well well-sm">
               <h4>if()</h4>
@@ -157,7 +157,7 @@ La séquence \" permet d’insérer un guillemet dans une chaîne.<dfn></li>
       </div>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<h3>5- Les structures itératives</h3>
+<h3> Les structures itératives</h3>
 <div class="col-lg-4">
     <div class="well well-sm">
         <h4>while()</h4>
@@ -202,7 +202,7 @@ La séquence \" permet d’insérer un guillemet dans une chaîne.<dfn></li>
               </div>
             </div>
 
-      <h3>6- Les fonctions </h3>
+      <h3> Les fonctions </h3>
       <ul>
         <li>l y a deux parties dans une fonction : sa déclaration et son appel. </li>
         <li>Syntaxe : <dfn>function nom_de_la_fonction([param1,[param2,…paramn]]])<br>

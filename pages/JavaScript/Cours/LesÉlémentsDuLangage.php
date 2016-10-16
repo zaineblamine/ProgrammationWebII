@@ -41,6 +41,7 @@ if (!isset($_SESSION['username'])) {
                         <h2>Les éléments du langage</h2>
 
                         <div>
+                          <div id=lesvariables>
                         <h3> Les variables</h3>
                         <ul>
                                 <li>JavaScript utilise l'instruction <bold class="thickblue">var</bold> pour la déclaration.</li>
@@ -49,6 +50,8 @@ if (!isset($_SESSION['username'])) {
                                 <li>A travers les fonctions  eval ou parseInt, parseFloat, parseDouble et toString; il est possible de convertir les types.</li>
                                 <li>Le langage est sensible à la casse.</li>
                         </ul>
+                      </div>
+                      <div id=lestypesdebase>
                         <h3> Les types de base</h3>
                         <ul>
                           <li>Les <bold class="thickblue">nombres</bold> : entier et réel</li>
@@ -84,6 +87,9 @@ La séquence \" permet d’insérer un guillemet dans une chaîne.<dfn></li>
                                 <span style="color:blue">&lt;</span><span style="color:brown">/body</span><span style="color:blue">&gt;</span><br>
                                 <span style="color:blue">&lt;</span><span style="color:brown">/html</span><span style="color:blue">&gt;</span>
                               </div>
+                              <div class="panel-footer">
+                                <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="LesÉlémentsDuLangageExemple1.php" target="_blank">Essayer le code</a></p>
+                              </div>
                   </div>
                 </div>
 
@@ -109,13 +115,13 @@ La séquence \" permet d’insérer un guillemet dans une chaîne.<dfn></li>
 
                           <span style="color:blue">&lt;</span><span style="color:brown">/body</span><span style="color:blue">&gt;</span><br>
                           <span style="color:blue">&lt;</span><span style="color:brown">/html</span><span style="color:blue">&gt;</span>
-                          <img class="alert" src="../../../img/alert2.png">
-                          <img class="alertNext" src="../../../img/alert3.png">
-
                         </div>
+
             </div>
             </div>
                       </div>
+                    </div>
+                    <div id=lesoperateures>
                         <h3> Les opérateurs</h3>
                         <ul>
                         <li>Les opérateurs de calcul  :<dfn> +, -, *, /, %, =</dfn></li>
@@ -142,6 +148,8 @@ La séquence \" permet d’insérer un guillemet dans une chaîne.<dfn></li>
                         <li>! - ++ --</li>
                         <li>( )</li>
                       </ul>
+                    </div>
+                    <div id=lesstructuresdecontroles>
 <h3> Les structures de contrôles </h3>
       <div class="col-lg-4">
           <div class="well well-sm">
@@ -156,7 +164,8 @@ La séquence \" permet d’insérer un guillemet dans une chaîne.<dfn></li>
           </div>
       </div>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+</div>
+<div id=lesstructuresiteratives>
 <h3> Les structures itératives</h3>
 <div class="col-lg-4">
     <div class="well well-sm">
@@ -182,9 +191,9 @@ La séquence \" permet d’insérer un guillemet dans une chaîne.<dfn></li>
     </div>
 </div><br><br><br><br><br><br><br><br><br><br>
 <h4>Application</h4>
-<p>Il s'agit de calculer la somme des nombres pairs compris entre 1 et 10.</p>
+<p> Calculer la somme des nombres pairs compris entre 1 et 10 en utilisant les structures itératives</p>
       <!-- /.panel-heading -->
-      <div class="col-lg-13">
+      <!--div class="col-lg-13">
           <div class="panel panel-default">
               <div class="panel-heading">
                    Les structures itératives: Application
@@ -200,8 +209,10 @@ La séquence \" permet d’insérer un guillemet dans une chaîne.<dfn></li>
                        <span style="color:blue">&lt;</span><span style="color:brown">/script</span><span style="color:blue">&gt;</span><br>
                 </div>
               </div>
-            </div>
-
+            </div-->
+            <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="LesÉlémentsDuLangageApplication.php" target="_blank">Voir la solution</a></p>
+</div>
+<div id=lesfonctions>
       <h3> Les fonctions </h3>
       <ul>
         <li>l y a deux parties dans une fonction : sa déclaration et son appel. </li>
@@ -252,7 +263,7 @@ Res=somme(3,5,7); <span style="color:blue">//renvoie 0</span><br>
               </div>
 <h4>Application </h4>
 <p>Ecrire une fonction appelée produit qui permet de calculer le produit des paramètres quelque soit leur nombre.</p>
-<div class="col-lg-13">
+<!--div class="col-lg-13">
     <div class="panel panel-default">
         <div class="panel-heading">
              Les fonctions: Application
@@ -270,7 +281,9 @@ alert(produit(<span style="color:red">3</span>,<span style="color:red">5</span>,
                <span style="color:blue">&lt;</span><span style="color:brown">/script</span><span style="color:blue">&gt;</span><br>
               </div>
           </div>
-      </div>
+      </div-->
+      <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="LesÉlémentsDuLangageApplication2.php" target="_blank">Voir la solution</a></p>
+</div>
       <br><br>
 </div><!--row-->
 

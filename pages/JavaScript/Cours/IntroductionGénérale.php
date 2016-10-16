@@ -41,7 +41,7 @@ if (!isset($_SESSION['username'])) {
                         <a class="navButtom col-lg-4" href="LesÉlémentsDuLangage.php">Les éléments du langage »</a><br><br>
                         <h2>Introduction Générale</h2>
 
-                        <div>
+                        <div id="definition">
                         <h3>Définition</h3>
                         <p>Javascript est un langage de scripts qui incorporé aux balises HTML, permet d'améliorer la présentation et l'interactivité des pages Web.</p>
                         <h3>Présentation</h3>
@@ -99,7 +99,6 @@ if (!isset($_SESSION['username'])) {
               <span style="color:blue">&lt;</span><span style="color:brown">!DOCTYPE</span> <span style="color:red">html</span><span style="color:blue">&gt;</span><br>
               <span style="color:blue">&lt;</span><span style="color:brown">html</span><span style="color:blue">&gt;</span><br>
               <span style="color:blue">&lt;</span><span style="color:brown">head</span><span style="color:blue">&gt;</span><br>
-              <span style="color:blue">&lt;</span><span style="color:brown">title</span><span style="color:blue">&gt;</span>une page contenant du Javascript<span style="color:blue">&lt;</span><span style="color:brown">/title</span><span style="color:blue">&gt;</span><br>
               <span style="color:blue">&lt;</span><span style="color:brown">/head</span><span style="color:blue">&gt;</span><br>
               <span style="color:blue">&lt;</span><span style="color:brown">body</span><span style="color:blue">&gt;</span><br>
               <span style="color:blue">&lt;</span><span style="color:brown">script</span> <span style="color:red">language=</span><span style="color:blue">"Javascript"</span>
@@ -154,7 +153,7 @@ if (!isset($_SESSION['username'])) {
 <li>Saisie de données
 prompt ("votre texte invite" ,valeur-initiale); une méthode de l'objet window (boite de dialogue).</li>
 </ul>
-
+<a href="#definition">def</a>
 <br><br>
 </div><!--row-->
 

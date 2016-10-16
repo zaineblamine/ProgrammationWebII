@@ -36,12 +36,21 @@
                 <li>
                     <a href="http://localhost/CoursInformatique/pages/accueil.php">Accueil</a>
                 </li>
-                <li><a href="#"><span class=thickblueNav>JavaScript</span></a></li>
-                <li>
+                <li><a href="#"><span class=thickblueNav>JavaScript</span></a>
+                </li>
+                                <li>
                                     <a href="http://localhost/CoursInformatique/pages/JavaScript/Cours/IntroductionGénérale.php">Introduction générale</a>
                                 </li>
                                 <li>
-                                    <a href="http://localhost/CoursInformatique/pages/JavaScript/Cours/LesÉlémentsDuLangage.php">Les éléments du langage</a>
+                                    <a href="http://localhost/CoursInformatique/pages/JavaScript/Cours/LesÉlémentsDuLangage.php">Les éléments du langage<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                      <li><a href="http://localhost/CoursInformatique/pages/JavaScript/Cours/LesÉlémentsDuLangage.php#lesvariables">Les variables</a></li>
+                                      <li><a href="http://localhost/CoursInformatique/pages/JavaScript/Cours/LesÉlémentsDuLangage.php#lestypesdebase">LesTypes de bases</a></li>
+                                      <li><a href="http://localhost/CoursInformatique/pages/JavaScript/Cours/LesÉlémentsDuLangage.php#lesoperateures">Les opérateurs</a></li>
+                                      <li><a href="http://localhost/CoursInformatique/pages/JavaScript/Cours/LesÉlémentsDuLangage.php#lesstructuresdecontroles">Les structures de contrôles</a></li>
+                                      <li><a href="http://localhost/CoursInformatique/pages/JavaScript/Cours/LesÉlémentsDuLangage.php#lesstructuresiteratives">Les structures itératives</a></li>
+                                      <li><a href="http://localhost/CoursInformatique/pages/JavaScript/Cours/LesÉlémentsDuLangage.php#lesfonctions">Les fonctions</a></li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#" class="">Les objets javascript<span class="fa arrow"></span></a>

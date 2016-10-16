@@ -1,17 +1,19 @@
+submitTryit()
+
 function submitTryit(n) {
   var text = document.getElementById("textareaCode").value;
   var ifr = document.createElement("iframe");
   ifr.setAttribute("frameborder", "0");
-  ifr.setAttribute("id", "iframeResult");  
+  ifr.setAttribute("id", "iframeResult");
   document.getElementById("iframewrapper").innerHTML = "";
   document.getElementById("iframewrapper").appendChild(ifr);
   var ifrw = (ifr.contentWindow) ? ifr.contentWindow : (ifr.contentDocument.document) ? ifr.contentDocument.document : ifr.contentDocument;
   ifrw.document.open();
-  ifrw.document.write(text);  
+  ifrw.document.write(text);
   ifrw.document.close();
   //23.02.2016: contentEditable is set to true, to fix text-selection (bug) in firefox.
   //(and back to false to prevent the content from being editable)
-  //(To reproduce the error: Select text in the result window with, and without, the contentEditable statements below.)  
+  //(To reproduce the error: Select text in the result window with, and without, the contentEditable statements below.)
   if (ifrw.document.body && !ifrw.document.body.isContentEditable) {
     ifrw.document.body.contentEditable = true;
     ifrw.document.body.contentEditable = false;
@@ -33,24 +35,24 @@ function restack(horizontal) {
     ic = document.getElementById("iframecontainer");
     t = document.getElementById("textarea");
     i = document.getElementById("iframe");
-    c = document.getElementById("container");    
+    c = document.getElementById("container");
     sv = document.getElementById("stackV");
     sh = document.getElementById("stackH");
     tc.className = tc.className.replace("horizontal", "");
-    ic.className = ic.className.replace("horizontal", "");        
-    t.className = t.className.replace("horizontal", "");        
-    i.className = i.className.replace("horizontal", "");        
-    c.className = c.className.replace("horizontal", "");                        
+    ic.className = ic.className.replace("horizontal", "");
+    t.className = t.className.replace("horizontal", "");
+    i.className = i.className.replace("horizontal", "");
+    c.className = c.className.replace("horizontal", "");
     sv.className = sv.className.replace("horizontal", "");
     sh.className = sh.className.replace("horizontal", "");
     stack = "";
     if (horizontal) {
         tc.className = tc.className + " horizontal";
-        ic.className = ic.className + " horizontal";        
-        t.className = t.className + " horizontal";        
-        i.className = i.className + " horizontal";                
-        c.className = c.className + " horizontal";                
-        sv.className = sv.className + " horizontal";                        
+        ic.className = ic.className + " horizontal";
+        t.className = t.className + " horizontal";
+        i.className = i.className + " horizontal";
+        c.className = c.className + " horizontal";
+        sv.className = sv.className + " horizontal";
         sh.className = sh.className + " horizontal";
         stack = " horizontal";
         document.getElementById("textareacontainer").style.height = "50%";
@@ -72,11 +74,11 @@ if (navigator.userAgent.indexOf("WebKit") > -1 && navigator.userAgent.indexOf("E
     removetabs();
     removespaces();
     colorcoding();
-    if (document.getElementById("textareaCode").addEventListener) {              
+    if (document.getElementById("textareaCode").addEventListener) {
         document.getElementById("textareaCode").addEventListener("input", removetabs);
         document.getElementById("textareaCode").addEventListener("input", colorcoding);
         document.getElementById("textareaCode").addEventListener("scroll", syncscroll);
-    } else if (document.getElementById("textareaCode").attachEvent) {                 
+    } else if (document.getElementById("textareaCode").attachEvent) {
         document.getElementById("textareaCode").attachEvent("oninput", removetabs);
         document.getElementById("textareaCode").attachEvent("oninput", colorcoding);
         document.getElementById("textareaCode").attachEvent("onscroll", syncscroll);
@@ -105,12 +107,12 @@ function removespaces() {
 function colorcoding() {
     var text = document.getElementById("textareaCode").value;
     text = text.replace(/&/g, "&amp;");
-    text = text.replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");   
-    text = text.replace(/  /g, " &nbsp;");  
+    text = text.replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+    text = text.replace(/  /g, " &nbsp;");
     text = text.replace(/</g, "&lt;");
     text = text.replace(/>/g, "&gt;");
     text = text.replace(/(?:\r\n|\r|\n)/g, '<br>');
-    text = text.replace(/<br> /g, "<br>&nbsp;");  
+    text = text.replace(/<br> /g, "<br>&nbsp;");
     text = w3CodeColorize(text);
     document.getElementById("codecolor").innerHTML = text + "<br>";
 }
@@ -143,7 +145,7 @@ function fixDragBtn() {
   var textareawidth, leftpadding, dragleft, containertop, buttonwidth
   var containertop = Number(w3_getStyleValue(document.getElementById("container"), "top").replace("px", ""));
   if (stack != " horizontal") {
-    document.getElementById("dragbar").style.width = "5px";    
+    document.getElementById("dragbar").style.width = "5px";
     textareasize = Number(w3_getStyleValue(document.getElementById("textareaCode"), "width").replace("px", ""));
     leftpadding = Number(w3_getStyleValue(document.getElementById("textarea"), "padding-left").replace("px", ""));
     buttonwidth = Number(w3_getStyleValue(document.getElementById("dragbar"), "width").replace("px", ""));
@@ -153,7 +155,7 @@ function fixDragBtn() {
     document.getElementById("dragbar").style.left = dragleft + "px";
     document.getElementById("dragbar").style.height = textareaheight;
     document.getElementById("dragbar").style.cursor = "col-resize";
-    
+
   } else {
     document.getElementById("dragbar").style.height = "5px";
     if (window.getComputedStyle) {
@@ -171,7 +173,7 @@ function fixDragBtn() {
     document.getElementById("dragbar").style.top = dragleft + "px";
     document.getElementById("dragbar").style.left = "5px";
     document.getElementById("dragbar").style.width = textareaheight;
-    document.getElementById("dragbar").style.cursor = "row-resize";        
+    document.getElementById("dragbar").style.cursor = "row-resize";
   }
 }
 function dragstart(e) {
@@ -180,9 +182,9 @@ function dragstart(e) {
   var main = document.getElementById("iframecontainer");
 }
 function dragmove(e) {
-  if (dragging) 
+  if (dragging)
   {
-    document.getElementById("shield").style.display = "block";        
+    document.getElementById("shield").style.display = "block";
     if (stack != " horizontal") {
       var percentage = (e.pageX / window.innerWidth) * 100;
       if (percentage > 5 && percentage < 98) {
@@ -201,14 +203,14 @@ function dragmove(e) {
         fixDragBtn();
       }
     }
-    showFrameSize();    
+    showFrameSize();
   }
 }
 function dragend() {
   document.getElementById("shield").style.display = "none";
   dragging = false;
 }
-if (window.addEventListener) {              
+if (window.addEventListener) {
   document.getElementById("dragbar").addEventListener("mousedown", function(e) {dragstart(e);});
   document.getElementById("dragbar").addEventListener("touchstart", function(e) {dragstart(e);});
   window.addEventListener("mousemove", function(e) {dragmove(e);});
@@ -271,7 +273,7 @@ function onPickerApiLoad() {
         userAction="";
         document.getElementById('driveText').style.display='none';
         document.getElementById('driveSavedPanel').style.display='block';
-        createFileWithHTMLContent(document.getElementById('googleFileName').value,document.getElementById('textareaCode').value)     
+        createFileWithHTMLContent(document.getElementById('googleFileName').value,document.getElementById('textareaCode').value)
     }
     if (userAction=="open") {
         userAction="";

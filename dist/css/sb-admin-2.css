@@ -9,6 +9,13 @@ body {
     font-weight: bold;
     color:#337ab7;
 }
+.thickred {
+    font-weight: bold;
+    color:#D20C0C;
+}
+.grey {
+    color:#A9A9A9;
+}
 .thickbluebig{
 font-weight: bold;
     color:#337ab7;
@@ -21,6 +28,9 @@ font-weight: bold;
 }
 .autre{
   position:relative;
+}
+.accueil{
+     line-height: 150%; 
 }
 
 .headerfixed{

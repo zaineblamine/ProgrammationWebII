@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-static-top headerfixed" role="navigation" style="margin-bottom: 0">
   <div class="navbar-header">
       <img class="logoEntete" src="http://localhost/CoursInformatique/img/logoiset.png">
-      <a class="navbar-brand Entete" href="http://localhost/CoursInformatique/pages/accueil.php">Programmation Web II: Apprendre JavaScript et XML</a>
+      <a class="navbar-brand Entete" href="http://localhost/CoursInformatique/pages/accueil.php">Programmation Web II : Apprendre JavaScript et XML</a>
       <img class="logoEntete2" src="http://localhost/CoursInformatique/img/logodept.png">
   </div>
     <ul class="nav navbar-top-links navbar-right">

@@ -21,7 +21,7 @@ if (isset($_SESSION['username'])) {
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
       <div class="navbar-header">
           <img class="logoEntete" src="http://localhost/CoursInformatique/img/logoiset.png">
-          <a class="navbar-brand Entete" href="#">Programmation Web II: Apprendre JavaScript et XML</a>
+          <a class="navbar-brand Entete" href="#">Programmation Web II : Apprendre JavaScript et XML</a>
           <img class="logoEntete2" src="http://localhost/CoursInformatique/img/logodept.png">
       </div>
             </nav>

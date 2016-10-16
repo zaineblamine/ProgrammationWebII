@@ -210,7 +210,7 @@ La séquence \" permet d’insérer un guillemet dans une chaîne.<dfn></li>
                 </div>
               </div>
             </div-->
-            <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="LesÉlémentsDuLangageApplication.php" target="_blank">Voir la solution</a></p>
+            <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="LesÉlémentsDuLangageApplication.php" target="_blank">Solution</a></p>
 </div>
 <div id=lesfonctions>
       <h3> Les fonctions </h3>
@@ -282,7 +282,7 @@ alert(produit(<span style="color:red">3</span>,<span style="color:red">5</span>,
               </div>
           </div>
       </div-->
-      <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="LesÉlémentsDuLangageApplication2.php" target="_blank">Voir la solution</a></p>
+      <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="LesÉlémentsDuLangageApplication2.php" target="_blank">Solution</a></p>
 </div>
       <br><br>
 </div><!--row-->

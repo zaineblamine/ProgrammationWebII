@@ -33,12 +33,22 @@ if (!isset($_SESSION['username'])) {
             <div class="container-fluid">
                 <div class="row">
                   <br><br><br>
-                    <div class="col-lg-12">
+                    <div class="col-lg-10">
                         <h1 class="page-header">Accueil</h1>
                         <br/>
-                        <h3>Je suis Technologue Agrégée en Informatique ISET Sfax</h3>
+                        <h4 class="accueil">Bonjour,<br><br>
+J'ai créé ce site pour y déposer le cours et les exercices de la matière <span class="thickblue">Programmation Web II : JavaScript et XML</span>, que j'ai réalisé pendant mes années d'enseignement, dans l'espoir de faire bénéficier aux étudiants en général (et aux miens en particulier) d'un référentiel assez complet.</br>
 
-                        <h3>J'ai créé cet espace pour partager mes supports de cours avec mes étudiants.</h3>
+<br>Toute remarque ou critique est la bienvenue.
+<br><br><span class="thickred">Mme Hayet LAMINE </span><br>
+<span class="grey">Technologue Agrégée en  en informatique.<br>
+Enseignante à l'Institut Supérieur des Etudes Technologiques de Sfax (ISET, Sfax-Tunisie).</span><br>
+Email:<a href="#">Lamine_hayet@yahoo.fr</a><br><br>
+<i class="grey">  "Celui qui a la prétention d'enseigner ne doit jamais cesser d'apprendre"</i>
+
+
+</h4>
+
                         <!--à améliorer ensuite-->
                     </div>
                                   </div>

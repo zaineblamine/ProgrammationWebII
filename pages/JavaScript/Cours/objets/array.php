@@ -92,7 +92,7 @@ A chaque instant, la taille d'un tableau peut être connue en invoquant la propr
        <span style="color:blue">&lt;</span><span style="color:brown">/script</span><span style="color:blue">&gt;</span><br>
       </div>
       <div class="panel-footer">
-        <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="exemple3.php">Essayer le code</a></p>
+        <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="arrayexemple3.php" target="_blank">Essayer le code</a></p>
       </div><!--En 0 on trouve 0
 En 1 on trouve 1
 En 2 on trouve 2
@@ -159,7 +159,7 @@ Donne :[9,12,54,111];</td>
 
                     <h4>Application</h4>
                     Ecrire un script qui permet de saisir un tableau (d’entier) et rechercher la valeur maximale.<br><br>
-                    <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="exemple3.php">Solution</a></p>
+                    <p><a class="btn btn-primary btn-lg sizebtn" role="button" href="arrayapplication.php" target="_blank">Solution</a></p>
 
 <br><br>
 </div></div>

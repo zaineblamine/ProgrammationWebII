@@ -153,7 +153,6 @@ if (!isset($_SESSION['username'])) {
 <li>Saisie de données
 prompt ("votre texte invite" ,valeur-initiale); une méthode de l'objet window (boite de dialogue).</li>
 </ul>
-<a href="#definition">def</a>
 <br><br>
 </div><!--row-->
 
